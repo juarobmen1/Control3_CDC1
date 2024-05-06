@@ -2,8 +2,8 @@ package cdc1.controller;
 
 import cdc1.entities.Coche;
 import cdc1.model.JPACocheDao;
-/* Nombre:
- * UVUS:  */
+/* Nombre: Juan Antonio
+ * UVUS:  juarobmen*/
 public class Main {
 
 	public static void main(String[] args) {
@@ -21,6 +21,9 @@ public class Main {
 		System.out.println(ventas.findAll());
 		
 		ventas.update(c3, 1);
+		ventas.update(c2, 2);
+		
+		System.out.println(ventas.findById(c2.getId()));
 				
 	}
 
